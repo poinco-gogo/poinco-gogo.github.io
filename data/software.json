@@ -1,0 +1,23 @@
+[
+  {
+    "name": "md_water",
+    "url": "https://github.com/poinco-gogo/md_water",
+    "description": "A from-scratch molecular dynamics engine for TIP3P water.",
+    "language": "C++",
+    "featured": true
+  },
+  {
+    "name": "md_alad",
+    "url": "https://github.com/poinco-gogo/md_alad",
+    "description": "A faster MD implementation for TIP3P water simulation, applied to alanine dipeptide.",
+    "language": "C++",
+    "featured": true
+  },
+  {
+    "name": "md_analysis",
+    "url": "https://github.com/poinco-gogo/md_analysis",
+    "description": "Analysis tools for MD trajectories.",
+    "language": "C++",
+    "featured": true
+  }
+]

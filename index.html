@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Koichi Tamura</title>
+  <meta name="description" content="Koichi Tamura — research scientist at digzyme Inc., working on molecular dynamics, QM/MM, and enzyme discovery and engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme before first paint to avoid a flash.
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">koichi<span>.</span>tamura</a>
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#software">Software</a>
+      <a href="#writing">Writing</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle color theme">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- Intro -->
+    <section class="intro">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/18255782?v=4" alt="Portrait of Koichi Tamura" width="96" height="96">
+      <div>
+        <h1>Koichi Tamura</h1>
+        <p class="role">Research Scientist at <a href="https://www.digzyme.com/en/">digzyme Inc.</a> · Japan</p>
+      </div>
+      <p class="statement">I study proteins mainly with molecular dynamics simulations, and with QM/MM when chemistry is involved. My current research focus is enzyme discovery and engineering.</p>
+      <ul class="tags">
+        <li><a class="tag" href="#r-md"><i style="--c: var(--moss)"></i>01. Molecular Dynamics</a></li>
+        <li><a class="tag" href="#r-qm"><i style="--c: var(--ochre)"></i>02. QM/MM</a></li>
+        <li><a class="tag" href="#r-enz"><i style="--c: var(--brick)"></i>03. Enzyme Discovery &amp; Engineering</a></li>
+      </ul>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section">
+      <h2>Research</h2>
+
+      <article class="card" id="r-md" style="--c: var(--moss)">
+        <span class="pill"><i></i>01 · Molecular Dynamics</span>
+        <p class="lead">Predicting conformational changes of proteins and computing their free-energy landscapes.</p>
+        <ul class="questions">
+          <li>How does a protein move between its functional states, and along which pathway?</li>
+          <li>What does the free-energy landscape along that change look like?</li>
+        </ul>
+      </article>
+
+      <article class="card" id="r-qm" style="--c: var(--ochre)">
+        <span class="pill"><i></i>02 · QM/MM</span>
+        <p class="lead">Free-energy calculations between two states of a photoreceptor protein, using QM/MM.</p>
+        <ul class="questions">
+          <li>What makes one state more stable than the other?</li>
+        </ul>
+      </article>
+
+      <article class="card" id="r-enz" style="--c: var(--brick)">
+        <span class="pill"><i></i>03 · Enzyme Discovery &amp; Engineering</span>
+        <p class="lead">Finding promising enzymes among large numbers of sequences and improving them, using structure prediction and machine-learning models alongside simulation.</p>
+        <ul class="questions">
+          <li>Which candidates are worth testing in the lab, and which mutations are likely to help?</li>
+        </ul>
+        <p class="related">Related: <a href="https://www.digzyme.com/en/thermal_stability/">In Silico Prediction of Enzyme Thermal Stability&nbsp;→</a></p>
+      </article>
+    </section>
+
+    <!-- Software -->
+    <section id="software" class="section">
+      <h2>Software</h2>
+      <p class="note">Open-source codes I have written — all on <a href="https://github.com/poinco-gogo">GitHub</a>.</p>
+      <div class="grid" id="repoList"></div>
+    </section>
+
+    <!-- Writing -->
+    <section id="writing" class="section">
+      <h2>Writing</h2>
+      <div class="stack" id="writingList"></div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <a class="card link-card" href="https://scholar.google.com/citations?user=rLJwqcwAAAAJ" style="--c: var(--slate)">
+        <span class="pill"><i></i>Google Scholar</span>
+        <p class="lead">Full list of publications and citations&nbsp;→</p>
+      </a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card contact">
+        <dl>
+          <dt>GitHub</dt><dd><a href="https://github.com/poinco-gogo">github.com/poinco-gogo</a></dd>
+          <dt>Qiita</dt><dd><a href="https://qiita.com/poinco_gogo">qiita.com/poinco_gogo</a></dd>
+          <dt>ORCID</dt><dd><a href="https://orcid.org/0000-0002-9472-7555">0000-0002-9472-7555</a></dd>
+          <dt>researchmap</dt><dd><a href="https://researchmap.jp/20180511">researchmap.jp/20180511</a></dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Koichi Tamura</p>
+    <p>Hand-written HTML · GitHub Pages</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
